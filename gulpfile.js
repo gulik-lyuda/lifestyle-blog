@@ -17,7 +17,9 @@
   var paths = {
     src: {
       pug: "source/**/*.pug",
+      // pug: "source/*.pug",
       css: "source/less/**/*.less",
+      // css: "source/less/base.less",
       css_vendors: "source/css/**/*.*",
       img: "source/images/**/*.*",
       js: "source/js/**/*.js"

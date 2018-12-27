@@ -4,9 +4,16 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        title Home Page
 
-        block styles
+        //- add fonts
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:300,400")
+        //- add vendor styles for normalization and using flex
+        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/general-flex-css.css")
+        //- our own styles
+        link(rel="stylesheet", href="css/base.css")
+        
     body
         include ../_modules/header
 

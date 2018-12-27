@@ -11,3 +11,27 @@ body {
     width: @wsize-940px;
     margin: 0 auto;
 }
+
+.btn {
+    padding: @wsize-5px @wsize-11px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: @bg-orange;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: @white;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

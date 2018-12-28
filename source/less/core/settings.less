@@ -12,3 +12,15 @@ button:hover,
     transition: all 200ms linear;
     cursor: pointer; // just for buttons, because links have it by default
 }
+
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */

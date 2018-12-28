@@ -1,0 +1,119 @@
+.blog_posts {
+    width: 100%;
+    height: auto;
+    margin-bottom: @wsize-67px;
+
+    .main_grid {
+        margin-bottom: @wsize-76px;
+    }
+
+    .post_card {
+        width: 100%;
+        height: auto;
+
+        background-color: @white;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .post_info {
+            padding: @wsize-22px @wsize-18px @wsize-18px @wsize-18px;
+
+            &__btn {
+                width: @wsize-76px;
+                margin: 0 auto @wsize-8px;
+            }
+
+            &__details {
+                margin-bottom: @wsize-11px;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .post_author,
+                .post_date {
+                    padding-left: 1.25vw;
+
+                    position: relative;
+
+                    font-family: 'Gilda Display', serif;
+                    font-size: @font-size-10px;
+                    line-height: 2;
+                    color: @font-grey;
+
+                    &:before {
+                        width: @wsize-11px;
+                        height: @wsize-11px;
+                        margin-left: -1.25vw;
+
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(0, -60%);
+
+                        border: 1px solid @font-grey;
+                        border-radius: 3px; 
+
+                        background-size: cover;
+                        filter: opacity(0.5) drop-shadow(0 0 0 @font-grey);
+                    } 
+                }
+
+                .post_author:before {
+                    background-image: url('../images/icons/user_icon.png');                                       
+                }
+
+                .post_date:before {
+                    background-image: url('../images/icons/calendar_icon.png');                                       
+                }
+            }
+
+            &__description {
+                font-family: 'Gilda Display', serif;
+                font-size: @font-size-22px;
+                line-height: 1.45;
+                text-align: center;
+                color: @font-dark-grey;
+            }
+        }
+        // end of .post_info 
+    }
+    // end of .post_card
+
+    .pagination-holder {
+        display: flex;
+        justify-content: center;
+
+        .light-theme {
+
+            .current,
+            a:hover {
+                background-color: @orange;
+                color: @white;                
+            }
+
+            span,
+            a {
+                width: auto;
+                height: @wsize-35px;
+                padding: 0 @wsize-13px;
+                margin-right: @wsize-11px;
+
+                display: flex;
+                align-items: center;
+
+                border-radius: 0;
+                border-color: @border-dark-grey;
+                text-transform: uppercase;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+// end of .blog_posts

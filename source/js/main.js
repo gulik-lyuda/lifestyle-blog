@@ -34,4 +34,12 @@
         slides[slideIndex - 1].style.display = "block";  
     }
 // end working with a slider
+
+    $('#compact-pagination').pagination({
+        pages: 8,
+        displayedPages: 3,
+        prevText: 'Previous',
+        cssStyle: 'light-theme'
+    });
 })();
+

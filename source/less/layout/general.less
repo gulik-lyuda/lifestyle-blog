@@ -12,6 +12,13 @@ body {
     margin: 0 auto;
 }
 
+.main_grid {
+    display: grid;
+    grid-template-columns: repeat(3, @wsize-300px);
+    grid-column-gap: @wsize-20px;
+    grid-row-gap: @wsize-22px;
+}
+
 .btn {
     padding: @wsize-5px @wsize-11px;
 
@@ -30,6 +37,24 @@ body {
     &:hover{
         transform: scale(1.25);
     }
+}
+// end of .btn
+
+h2 {
+    font-family: 'Gilda Display', serif;
+    font-size: @font-size-24px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.section_header {
+    width: @wsize-300px;
+    margin: 0 auto @wsize-46px;
+    padding: @wsize-11px @wsize-20px;
+
+    background-color: @orange;
+    color: @white;
 }
 
 /* Fading animation */

@@ -1,0 +1,31 @@
+//- add an array of blog posts
+- var postsList = []
+- postsList.push({pageNo: "1", imgSrc: "images/content/blog_post_img_1.jpg", author: "John Doe", date: "27 Dec, 2018", description: "Similique fugit occaecati dolor ipsum ducimus"})
+- postsList.push({pageNo: "1", imgSrc: "images/content/blog_post_img_2.jpg", author: "Jane Doe", date: "24 Dec, 2018", description: "Quaerat temporibus sunt et quia sed id"})
+- postsList.push({pageNo: "1", imgSrc: "images/content/blog_post_img_3.jpg", author: "John Doe", date: "17 Dec, 2018", description: "Fugiat in cupiditate iusto dolor dolorem"})
+- postsList.push({pageNo: "1", imgSrc: "images/content/blog_post_img_4.jpg", author: "Kate Smith", date: "13 Dec, 2018", description: "Eos voluptatem aut doloremque"})
+- postsList.push({pageNo: "1", imgSrc: "images/content/blog_post_img_5.jpg", author: "John Doe", date: "7 Dec, 2018", description: "Temporibus quod architecto pariatur sint itaque temporibus"})
+- postsList.push({pageNo: "1", imgSrc: "images/content/blog_post_img_6.jpg", author: "Jane Doe", date: "1 Dec, 2018", description: "Ut adipisci ullam sit iste vel voluptatem"})
+- postsList.push({pageNo: "1", imgSrc: "images/content/blog_post_img_7.jpg", author: "John Doe", date: "27 Nov, 2018", description: "Molestiae dolor dignissimos cupiditate"})
+- postsList.push({pageNo: "1", imgSrc: "images/content/blog_post_img_8.jpg", author: "Kate Smith", date: "24 Nov, 2018", description: "Doloremque deleniti voluptatum dolorem"})
+- postsList.push({pageNo: "1", imgSrc: "images/content/blog_post_img_9.jpg", author: "John Doe", date: "17 Nov, 2018", description: "Fugiat in cupiditate iusto dolor dolorem"})
+
+//- create mixin for post's card
+mixin post_card(post)
+    .post_card
+        img.post_img(src=post.imgSrc)
+        .post_info
+            .post_info__btn.btn travel
+            .post_info__details
+                .post_author= post.author
+                .post_date= post.date
+            .post_info__description= post.description
+
+.blog_posts
+    .container
+        h2.section_header latest posts
+        .main_grid
+            for post in postsList
+                +post_card(post)
+        .pagination-holder.clearfix
+            #compact-pagination

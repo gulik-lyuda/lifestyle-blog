@@ -1,0 +1,18 @@
+//- add an array of posts
+- var postsList = []
+- postsList.push({imgSrc: "images/content/featured_post_img_1.jpg", description: "Eos voluptatem aut doloremque"})
+- postsList.push({imgSrc: "images/content/featured_post_img_2.jpg", description: "Fugiat in cupiditate iusto dolor dolorem"})
+- postsList.push({imgSrc: "images/content/featured_post_img_3.jpg", description: "Doloremque deleniti voluptatum dolorem"})
+
+//- create mixin for post's card
+mixin post_card(post)
+    .post_card
+        img.post_img(src=post.imgSrc)
+        .post_info
+            .post_info__btn.btn travel
+            .post_info__description= post.description
+
+.featured_posts
+    .container.main_flex__nowrap.flex__jcontent_between.flex__align-items_center
+        for post in postsList
+            +post_card(post)

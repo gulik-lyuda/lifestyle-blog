@@ -1,0 +1,40 @@
+.featured_posts {
+    width: 100%;
+    height: auto;
+    margin-bottom: @wsize-67px;
+
+    .post_card {
+        width: @wsize-300px;
+        height: @wsize-213px;
+
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .post_info {
+            position: absolute;
+            top: @wsize-122px;
+            left: @wsize-18px;
+
+            &__btn {
+                width: @wsize-55px;
+                height: auto;
+                margin-bottom: @wsize-11px;
+
+                text-transform: capitalize;
+            }
+
+            &__description {
+                font-family: 'Gilda Display', serif;
+                font-size: @font-size-18px;
+                font-weight: 300;
+                line-height: 1.22;
+                color: @white;
+            }
+        }
+    }
+    // end of .post_card
+}

@@ -1,1 +1,39 @@
+//- add an array of footer latests posts
+- var postsList = []
+- postsList.push({imgSrc: "images/content/featured_post_img_1.jpg", description: "Eos voluptatem aut doloremque", date: "27 Dec, 2018"})
+- postsList.push({imgSrc: "images/content/featured_post_img_2.jpg", description: "Fugiat in cupiditate iusto dolor dolorem", date: "24 Dec, 2018"})
+- postsList.push({imgSrc: "images/content/featured_post_img_3.jpg", description: "Ut adipisci ullam sit iste vel voluptatem", date: "17 Dec, 2018"})
+
+//- create mixin for footer latest post's card
+mixin footer_post_card(post)
+    .footer_latest_post_card.main_flex__nowrap.flex__jcontent_start.flex__align-items_start
+        img.post_img(src=post.imgSrc)
+        .post_info
+            a(href="#").post_info__description= post.description
+            .post_info__date= post.date
+
 footer.footer_main
+    .container
+        .columns.main_flex__nowrap.flex__jcontent_between.flex__align-items_start
+            .column
+                h3.block_header about us
+                p.description Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+
+            .column
+                h3.block_header never miss any update
+                .send_updates_block.main_flex__nowrap.flex__jcontent_start.flex__align-items_center
+                    input#email_address(placeholder="Enter Your Email Address")
+                    button.submit: img(src="images/icons/mail_icon.png")
+
+                h3.block_header follow us
+                include socials
+
+            .column
+                h3.block_header latests posts
+                .footer_latests_posts
+                    for post in postsList
+                        +footer_post_card(post)
+        .copyright
+            p Copyright 2018 Mahmuda | Site design by <span>Graphicslot</span>
+                        
+                        

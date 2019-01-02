@@ -1,0 +1,25 @@
+.instagram_images {
+    width: 100%;
+    height: auto;
+    margin-bottom: @wsize-103px;
+
+    .main_grid {
+        grid-template-columns: repeat(4, @wsize-229px);
+        grid-gap: @wsize-8px;
+    }
+
+    .image_card {
+        width: 100%;
+        height: @wsize-220px;
+
+        overflow: hidden;
+
+        a,
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    // end of .image_card
+}
+// end of .instagram_images

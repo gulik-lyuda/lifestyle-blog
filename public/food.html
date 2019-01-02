@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gilda+Display&amp;amp;subset=latin-ext"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/general-flex-css.css"/>
+    <link rel="stylesheet" href="css/simple-pagination.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+  </head>
+  <body>
+    <header class="header_main">
+      <div class="header_top">
+        <div class="container main_flex__nowrap flex__jcontent_between flex__align-items_center">
+          <div class="welcome_message">
+            <p>Welcome To Our Lifestyle Blog</p>
+            <p>Today: <span id="current_date">17 July, 2018</span></p>
+          </div>
+          <div class="logo"><a href="index.html"><img src="images/icons/logo.png" alt="Blog Logo"/></a></div>
+          <div class="socials">
+            <ul class="main_flex__nowrap flex__jcontent_between flex__align-items_center">
+              <li><a href="#"><img src="images/icons/youtube_icon.png" alt="YouTube Logo"/></a></li>
+              <li><a href="#"><img src="images/icons/instagram_icon.png" alt="Instagram Logo"/></a></li>
+              <li><a href="#"><img src="images/icons/twitter_icon.png" alt="Twitter Logo"/></a></li>
+              <li><a href="#"><img src="images/icons/facebook_icon.png" alt="Facebook Logo"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="main_menu">
+        <ul class="container main_flex__nowrap flex__jcontent_between flex__align-items_center">
+          <li><a class="active" href="index.html">home</a></li>
+          <li><a href="food.html">food</a></li>
+          <li><a href="drink.html">drink</a></li>
+          <li><a href="life.html">life</a></li>
+          <li><a href="recipes.html">recipes</a></li>
+          <li><a href="travel.html">travel</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <footer class="footer_main">
+      <div class="container">
+        <div class="columns main_flex__nowrap flex__jcontent_between flex__align-items_start">
+          <div class="column">
+            <h3 class="block_header">about us</h3>
+            <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+          </div>
+          <div class="column">
+            <h3 class="block_header">never miss any update</h3>
+            <div class="send_updates_block main_flex__nowrap flex__jcontent_start flex__align-items_center">
+              <input id="email_address" placeholder="Enter Your Email Address"/>
+              <button class="submit"><img src="images/icons/mail_icon.png"/></button>
+            </div>
+            <h3 class="block_header">follow us</h3>
+            <div class="socials">
+              <ul class="main_flex__nowrap flex__jcontent_between flex__align-items_center">
+                <li><a href="#"><img src="images/icons/youtube_icon.png" alt="YouTube Logo"/></a></li>
+                <li><a href="#"><img src="images/icons/instagram_icon.png" alt="Instagram Logo"/></a></li>
+                <li><a href="#"><img src="images/icons/twitter_icon.png" alt="Twitter Logo"/></a></li>
+                <li><a href="#"><img src="images/icons/facebook_icon.png" alt="Facebook Logo"/></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <h3 class="block_header">latests posts</h3>
+            <div class="footer_latests_posts">
+                  <div class="footer_latest_post_card main_flex__nowrap flex__jcontent_start flex__align-items_start"><img class="post_img" src="images/content/featured_post_img_1.jpg"/>
+                    <div class="post_info"><a class="post_info__description" href="#">Eos voluptatem aut doloremque</a>
+                      <div class="post_info__date">27 Dec, 2018</div>
+                    </div>
+                  </div>
+                  <div class="footer_latest_post_card main_flex__nowrap flex__jcontent_start flex__align-items_start"><img class="post_img" src="images/content/featured_post_img_2.jpg"/>
+                    <div class="post_info"><a class="post_info__description" href="#">Fugiat in cupiditate iusto dolor dolorem</a>
+                      <div class="post_info__date">24 Dec, 2018</div>
+                    </div>
+                  </div>
+                  <div class="footer_latest_post_card main_flex__nowrap flex__jcontent_start flex__align-items_start"><img class="post_img" src="images/content/featured_post_img_3.jpg"/>
+                    <div class="post_info"><a class="post_info__description" href="#">Ut adipisci ullam sit iste vel voluptatem</a>
+                      <div class="post_info__date">17 Dec, 2018</div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright 2018 Mahmuda | Site design by <span>Graphicslot</span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/vendors/jquery.simple-pagination.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

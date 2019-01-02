@@ -1,0 +1,176 @@
+.footer_main {
+    padding: @wsize-76px 0 @wsize-30px;
+
+    background-color: @bg-dark-grey;
+
+    font-family: 'Gilda Display', serif;
+    font-size: @font-size-14px;
+    font-weight: 300;
+    line-height: 1.86;
+    color: @white;
+
+    .columns {
+        width: 100%;
+        height: auto;
+        margin-bottom: @wsize-62px;
+
+        position: relative;
+
+        &:after {
+            width: @wsize-550px;
+            height: 1px;
+
+            position: absolute;
+            content: '';
+            left: @wsize-205px;
+            bottom: -@wsize-62px;
+            
+            background-color: @border-dark-grey;
+        }
+    }
+    // end of .columns 
+
+    .column {
+        width: @wsize-300px;
+        height: auto;
+
+        .block_header {
+            margin-top: 0;
+            margin-bottom: @wsize-22px;
+
+            color: @white;
+        }
+
+        .description {
+            margin-block-start: 0;
+        }
+
+        .socials {
+            ul {
+                justify-content: flex-start;
+
+                li a img {
+                    filter: opacity(0.5) drop-shadow(0 0 0 @border-dark-grey);
+                }
+            }
+        }
+        // end of .socials
+
+        .send_updates_block {
+            width: 100%;
+            height: @wsize-40px;
+            margin-bottom: @wsize-35px;  
+            
+
+            position: relative;
+
+            #email_address {
+                width: 100%;
+                height: 100%;                
+                padding: 0 @wsize-13px;           
+    
+                background-color: transparent;
+                border: 1px solid @border-grey;
+
+                &:focus {
+                    outline: none;
+                    border-color: @orange;
+                    box-shadow: 0 0 @wsize-5px @orange;
+                }
+
+                &::placeholder {
+                    font-size: @font-size-12px;
+                    color: @font-grey;
+                }
+            }
+            // end of  #email_address
+
+            .submit {
+                width: @wsize-49px;
+                height: 100%;
+
+                position: absolute;
+                z-index: 10;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                background-color: transparent;
+                border: none;
+                border-left: 1px solid @border-grey;
+
+                img {
+                    width: @wsize-18px;
+                    height: @wsize-18px;
+
+                    filter: opacity(0.5) drop-shadow(0 0 0 @border-dark-grey);
+                }
+
+                &:hover {                  
+
+                    img {
+                        transform: scale(1.25);
+                        filter: opacity(0.5) drop-shadow(0 0 0 @orange);
+                    }
+                }
+            }
+            // end of .submit
+        }
+        // end of .send_updates_block       
+        
+        .footer_latests_posts {
+
+            .footer_latest_post_card {
+                width: 100%;
+                height: auto;
+                margin-bottom: @wsize-16px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .post_img {
+                    width: @wsize-73px;
+                    height: @wsize-62px;
+                    margin-right: @wsize-16px;
+
+                    object-fit: fill;
+                }
+
+                .post_info {
+                    margin-top: -0.4vw;
+
+                    &__description {
+                        text-decoration: none;
+                        color: @white;
+                        line-height: 1.57;
+                    }
+
+                    &__date {
+                        font-size: @font-size-12px;
+                    }
+                }
+                // end of .post_info
+            }
+            // end of .footer_latest_post_card
+        }
+        // end of .footer_latests_posts
+    }
+    // end of .column
+
+    .copyright {
+        padding: @wsize-20px 0;
+
+        text-align: center;
+
+        span {
+            color: @orange;
+        }
+    }
+    // end of .copyright
+}
+// end of .footer_main

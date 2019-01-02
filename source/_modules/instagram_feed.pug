@@ -1,0 +1,11 @@
+//- create mixin for post's card
+mixin image_card()
+    .image_card
+        a(href="#"): img(src='')
+
+.instagram_images
+    .container
+        h2.section_header instagram feed
+        .main_grid
+            - for (var i = 0; i < 8; i++)
+                +image_card()

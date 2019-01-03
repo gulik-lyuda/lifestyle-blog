@@ -1,0 +1,358 @@
+@media all and ( min-width: 769px ) and (max-width: 1024px ) {
+    body {
+        font-size: 1.4vmax;
+    }
+
+    .container {
+        width: 75vw;
+    }
+
+    h3 {
+        font-size: 1.25vmax;
+    }
+
+    .socials {
+        ul {
+            li {
+                width: 3.45vw;
+                height: 3.45vw;
+
+                a {
+                    img {
+                        width: 2vw;
+                        height: 2vw;
+                    }
+                }
+            }
+        }
+    }
+    // end of .socials
+
+    .section_header {
+        width: 25vw;
+    }
+
+    .btn {
+        padding: 0.75vw 1.75vw;
+    }
+
+    .slide_info {
+        height: auto;
+        padding: 2.25vw 4vw 2vw;
+
+        .slide_info__btn {
+            width: 10vw;
+        }
+
+        .slide_info__description {
+            font-size: 1.85vmax;
+        }
+    }
+    // end of .slide_info
+
+    .featured_posts {
+        .post_card {
+            height: 17vw;
+
+            .post_info {
+                top: 7.5vw;
+            }
+
+            .post_info__btn {
+                width: 7vw;
+            }
+
+            .post_info__description {
+                font-size: 1.5vmax;
+            }
+        }
+    }
+    // end of .featured_posts
+
+    .blog_posts {
+        .post_card {
+            .post_info__btn {
+                width: 10vw;
+            }
+
+            .post_info__details {
+                .post_author,
+                .post_date {
+                    font-size: 1.25vmax;
+
+                    &:before {
+                        width: 1.25vw;
+                        height: 1.25vw;
+                        margin-left: -1.75vw;
+                    }
+                }
+            }
+        }
+    }
+    // end of .blog_posts
+
+    .footer_main {
+        font-size: 1.25vmax;
+
+        .column {
+            .send_updates_block {
+                height: 3.75vw;
+
+                #email_address::placeholder {
+                    font-size: 1vmax;
+                }
+
+                .submit {
+                    img {
+                        width: 2vw;
+                        height: 2vw;
+                    }
+                }
+
+            }
+        }
+    }
+    // end of .footer_main
+}
+
+@media all and ( min-width: 320px ) and (max-width: 768px ) {
+    body {
+        font-size: 3vmin;
+    }
+
+    .container {
+        width: 90vw;
+    }
+
+    .main_grid {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .btn {
+        padding: 1.35vw 3.76vw;
+    }
+
+    h2 {
+        font-size: 4vmin;
+    }
+
+    h3 {
+        font-size: 3.25vmin;
+    }
+
+    .section_header {
+        width: 65%;
+        padding: 1.75vw 1.5vw;
+    }
+
+    .socials {
+        width: 60%;
+        margin: 0 auto;
+
+        ul {
+
+            li {
+                width: 8vw;
+                height: 8vw;
+                margin-right: 2.75vw;
+
+                a {
+                    img {
+                        width: 4.5vw;
+                        height: 4.5vw;
+                    }
+                }
+            }
+        }
+    }
+    // end of .socials
+
+    .header_top {
+        .container{
+            display: block;
+        }
+
+        .welcome_message {
+            text-align: center;
+        }
+
+        .logo {
+            width: 70%;
+            height: auto;
+            margin: 0 auto 7vw;
+        }
+    }
+    // end of .header_top
+
+    .main_menu {
+        display: none;
+    }
+
+    .slider {
+        height: 60vw;
+
+        .slide_info {
+            width: 80%;
+            height: 18vw;
+            padding: 3.25vw 4vw 3.75vw;
+
+            &__btn {
+                width: 35%;
+                margin-bottom: 2.75vw;
+            }
+
+            &__description {
+                font-size: 3vmin;
+            }
+        }
+        // end of .slide_info
+    }
+    // end of .slider
+
+    .featured_posts {
+        .post_card {
+            height: 22.5vw;
+
+            .post_info {
+                left: 2.5vw;
+                top: 13.5vw;
+
+                &__btn {
+                    width: 15vw;
+                    margin-bottom: 1.75vw;
+                }
+
+                &__description {
+                    display: none;
+                }
+            }
+        }
+    }
+    // end of .featured_posts 
+
+    .blog_posts {
+        .post_card {
+            .post_info {
+                padding: 3.5vw 2.25vw 3.25vw 2.25vw;
+
+                &__btn {
+                    width: 50%;
+                    margin-bottom: 3vw;
+                }
+
+                &__details {
+                    margin-bottom: 2.75vw;
+
+                    .post_author,
+                    .post_date {
+                        font-size: 2.25vmin;
+
+                        &:before {
+                            width: 3.5vw;
+                            height: 3.5vw;
+                            margin-left: -4.75vw;
+                        }
+                    }
+                }
+
+                &__description {
+                    font-size: 3.5vmin;
+                }
+            }
+
+            &:last-child {
+                display: none;
+            }
+        }
+        // end of .post_card
+
+        .pagination-holder {
+            .light-theme {
+                span,
+                a {
+                    height: 7vw;
+                    padding: 0 1.5vw;
+                    margin-right: 1vw;
+                }
+            }
+        }
+    }
+    // end of .blog_posts
+
+    .instagram_images {
+        .main_grid {
+            grid-template-columns: repeat(2, 49.5%);
+        }
+
+        .image_card {
+            height: 100%;
+        }
+    }
+    // end of .instagram_images 
+
+    .footer_main {
+
+        font-size: 3.75vmin;
+
+        .columns {
+            display: block;            
+        }
+
+        .column {
+            width: 100%;
+            margin-bottom: 7vw;
+
+            .block_header {
+                margin-bottom: 2.5vw;
+            }
+
+            .send_updates_block {
+                height: 10vw;
+
+                #email_address {
+                    padding: 0 3vw;
+
+                    &::placeholder {
+                        font-size: 3vmin;
+                    }
+                }
+
+                .submit {
+                    width: 10vw;
+
+                    img {
+                        width: 5vw;
+                        height: 5vw;
+                    }
+                }
+            }
+            // end of .send_updates_block
+
+            .socials {
+                margin: 0;
+            }
+
+            .footer_latests_posts {
+
+                .footer_latest_post_card {
+                    margin-bottom: 3vw;
+
+                    .post_img {
+                        width: 25%;
+                        height: 100%;
+                        margin-right: 3vw;
+                    }
+
+                    .post_info__date {
+                        font-size: 2.75vmin;
+                    }
+                }
+            }
+        }
+        // end of .column        
+    }
+    // end of .footer_main
+}
+
+
+
